@@ -79,3 +79,17 @@ h1, h2, h3 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 ```
+
+
+### Exercise #20 - Additional Pages
+
+1. Define a function for the page in the controller file.
+2. Create a views file.
+3. Modify the routes.rb file in config directory.
+```ruby
+Rails.application.routes.draw do
+    root to: 'pages#home'
+    get 'about', to: 'pages#about'
+end
+```
+**Notice the difference between the home page route and the additional page (about) route.**
