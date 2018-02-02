@@ -72,6 +72,7 @@ To add custom fonts to the new homepage:
   </body>
 </html>
 ```
+**Remove https: from the href to add flexibility for SSL certificates**
 
 2. Add CSS style to app/assets/stylesheets/application.css
 ```CSS
@@ -92,4 +93,31 @@ Rails.application.routes.draw do
     get 'about', to: 'pages#about'
 end
 ```
-**Notice the difference between the home page route and the additional page (about) route.**
+> Notice the difference between the home page route and the additional page (about) route.
+
+
+### Exercise #22 - Twitter Bootstrap
+
+**Twitter bootstrap can be added using Bootstrap CDN but we are using the bootstrap sass gem.**
+[Bootstrap CDN](https://www.bootstrapcdn.com/)
+
+To use Bootstrap CDN, all you need to do is copy the appropriate CDN code to the application.html.erb file.
+> The Bootstrap CDN is minified (.min) to improve delivery speed of css.
+_Minified means all white space is removed from the code._
+[Bootstrap CDN](https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css)
+
+Installing Twitter Bootstrap gem:
+
+
+1. Add bootstrap-sass and bootstrap to gemfile.
+2. Run the ```bundle install``` terminal command within the application's main directory to install new gems from gemfile.
+3. Add Sass extension (.scss) to the stylesheets file
+ - app/assets/stylesheets/application.css
+4. Test the installation by surrounding the ```<%= yield %>``` tag of any page with a with bootstrap div tag.
+  ```html
+  <div class="container">
+    <%= yield %>
+  </div>
+  ```
+
+    _The page should be responsive (resize when browser size is modified) if installed correctly._
