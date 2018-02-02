@@ -19,6 +19,7 @@ To create a new web page for the rails app:
   - app/views/layouts/pages/$views_file.erb
   **This file name must match the method in the controllers file**
 
+
  3. Modify routes file.
   - The routes file allows you to point to the new views file.
     ```ruby
@@ -32,7 +33,14 @@ Home page hit > routes.rb activated > root (home) points to PagesController with
 
 
 ### Exercise #18 - Google Fonts
+
+*The application layout file shows up on every page of the site.*
+
+
+*The <%= yield %> dictates where rails pulls in information to from the other views files.*
+
 To add custom fonts to the new homepage:
+
 
 1. Add google fonts href to app/views/layouts/application.html.erb file.
 ```html
