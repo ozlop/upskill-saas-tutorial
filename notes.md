@@ -121,3 +121,23 @@ Installing Twitter Bootstrap gem:
   ```
 
     _The page should be responsive (resize when browser size is modified) if installed correctly._
+
+### Exercise #27 - Adding a Gradient
+
+Gradient CSS code was copied from uiGradients.com and added to the body tag and .navbar class in the application.css.scss
+
+```css
+body, .navbar {
+  //Gradient provided by @_ighosh at uiGradients.com
+  background: #3a7bd5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+```
+
+Removed border between .navbar and body
+```css
+.navbar {
+  border: none;
+}
+```
