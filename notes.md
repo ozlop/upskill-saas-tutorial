@@ -72,7 +72,7 @@ To add custom fonts to the new homepage:
   </body>
 </html>
 ```
-**Remove https: from the href to add flexibility for SSL certificates**
+> Remove https: from the href to add flexibility for SSL certificates
 
 2. Add CSS style to app/assets/stylesheets/application.css
 ```CSS
